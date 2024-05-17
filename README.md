@@ -1,3 +1,3 @@
 # yocto
 Patches 
-Author : Kavita V
+Author : Kavita Vakkund
