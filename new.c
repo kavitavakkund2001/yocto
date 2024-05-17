@@ -1,8 +1,24 @@
-#include<stdio.h>
+ #include <stdio.h>
+#include "new.h"
 
-int main(){
-    int num1=10,num2=20;
-    int sum=num1+num2;
-    printf("Sum of two numbers is : %d",sum);
-    return 0;
+int main() {
+  #ifdef WELCOME
+    #if WELCOME == y
+      printf("Welcome to Yocto Tutorial.\n");
+    #endif
+  #endif
+
+  #ifdef HELLO
+    #if HELLO == y
+      printf("Hello there, I am an example code :)\n");
+    #endif
+  #endif
+
+  #ifdef BYE
+    #if BYE == y
+      printf("Bye, keep learning!!\n");
+    #endif
+  #endif
+
+  return 0;
 }
