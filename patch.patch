@@ -1,0 +1,42 @@
+commit b928ffd566d9efe908661d11643d5423eae5cc32
+Author: kavita vakkund <kavitavakkund6102001@gmail.com>
+Date:   Fri May 17 00:26:08 2024 -0700
+
+    modified new.c
+
+diff --git a/new.c b/new.c
+index 1232620..09d42bd 100644
+--- a/new.c
++++ b/new.c
+@@ -1,8 +1,24 @@
+-#include<stdio.h>
++ #include <stdio.h>
++#include "new.h"
+ 
+-int main(){
+-    int num1=10,num2=20;
+-    int sum=num1+num2;
+-    printf("Sum of two numbers is : %d",sum);
+-    return 0;
++int main() {
++  #ifdef WELCOME
++    #if WELCOME == y
++      printf("Welcome to Yocto Tutorial.\n");
++    #endif
++  #endif
++
++  #ifdef HELLO
++    #if HELLO == y
++      printf("Hello there, I am an example code :)\n");
++    #endif
++  #endif
++
++  #ifdef BYE
++    #if BYE == y
++      printf("Bye, keep learning!!\n");
++    #endif
++  #endif
++
++  return 0;
+ }
+\ No newline at end of file
